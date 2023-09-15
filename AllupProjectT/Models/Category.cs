@@ -1,4 +1,5 @@
-﻿using System.ComponentModel.DataAnnotations;
+﻿using Microsoft.CodeAnalysis.Operations;
+using System.ComponentModel.DataAnnotations;
 
 namespace AllupProjectT.Models
 {
@@ -12,5 +13,7 @@ namespace AllupProjectT.Models
         public bool IsMain { get; set; }
         public int? ParentId { get; set; }
         public Category Parent { get; set; }
+
+        public IEnumerable<Category> Children { get; set; }
     }
 }

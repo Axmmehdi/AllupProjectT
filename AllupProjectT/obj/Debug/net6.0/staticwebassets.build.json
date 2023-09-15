@@ -1,6 +1,6 @@
 {
   "Version": 1,
-  "Hash": "fu+p6w3C9Lh/sAdCW2YYhtlz3z2gFH47iOex7l1Y+nE=",
+  "Hash": "Eb6D7lQDfnt2trBqpTzUjhfMuh7tXBwKasEj0lkwHSk=",
   "Source": "AllupProjectT",
   "BasePath": "_content/AllupProjectT",
   "Mode": "Default",
@@ -2378,6 +2378,23 @@
       "CopyToOutputDirectory": "Never",
       "CopyToPublishDirectory": "PreserveNewest",
       "OriginalItemSpec": "wwwroot\\assets\\images\\special-products\\special-products-8.jpg"
+    },
+    {
+      "Identity": "C:\\Users\\ahmed\\OneDrive\\Desktop\\Yeni klasör\\AllupProjectT\\wwwroot\\assets\\js\\custom.js",
+      "SourceId": "AllupProjectT",
+      "SourceType": "Discovered",
+      "ContentRoot": "C:\\Users\\ahmed\\OneDrive\\Desktop\\Yeni klasör\\AllupProjectT\\wwwroot\\",
+      "BasePath": "_content/AllupProjectT",
+      "RelativePath": "assets/js/custom.js",
+      "AssetKind": "All",
+      "AssetMode": "All",
+      "AssetRole": "Primary",
+      "RelatedAsset": "",
+      "AssetTraitName": "",
+      "AssetTraitValue": "",
+      "CopyToOutputDirectory": "Never",
+      "CopyToPublishDirectory": "PreserveNewest",
+      "OriginalItemSpec": "wwwroot\\assets\\js\\custom.js"
     },
     {
       "Identity": "C:\\Users\\ahmed\\OneDrive\\Desktop\\Yeni klasör\\AllupProjectT\\wwwroot\\assets\\js\\main.js",

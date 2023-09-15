@@ -34,10 +34,17 @@ namespace AllupProjectT.Models
         [StringLength(255)]
 
         public string HoverImage { get; set; }
+        public bool IsNewArrival { get; set; }
+        public bool IsBestSeller { get; set; }
+
+        public bool IsFeatured { get; set; }
+
 
         public int CategoryId  { get; set; }
         public Category Category { get; set; }
         public int Brandİd { get; set; }
         public Brand Brand { get; set; }
+
+        public IEnumerable<ProductImage>? ProductImages { get; set; }
     }
 }

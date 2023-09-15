@@ -5,16 +5,16 @@ namespace AllupProjectT.Models
     public class Slider :BaseEntity
     {
         [StringLength(255)]
-        public string MainTitle { get; set; }
+        public string? MainTitle { get; set; }
         [StringLength(255)]
-        public string SubTitle { get; set; }
+        public string? SubTitle { get; set; }
         [StringLength(255)]
-        public string Image { get; set; }
+        public string? Image { get; set; }
         [StringLength(5000)]
-        public string Description { get; set; }
+        public string? Description { get; set; }
 
         [StringLength(255)]
-        public string Link { get; set; }
+        public string? Link { get; set; }
 
 
 

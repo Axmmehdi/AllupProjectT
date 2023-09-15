@@ -173,7 +173,16 @@ namespace AllupProjectT.Migrations
                         .HasMaxLength(255)
                         .HasColumnType("nvarchar(255)");
 
+                    b.Property<bool>("IsBestSeller")
+                        .HasColumnType("bit");
+
                     b.Property<bool>("IsDeleted")
+                        .HasColumnType("bit");
+
+                    b.Property<bool>("IsFeatured")
+                        .HasColumnType("bit");
+
+                    b.Property<bool>("IsNewArrival")
                         .HasColumnType("bit");
 
                     b.Property<string>("MainImage")
@@ -450,7 +459,7 @@ namespace AllupProjectT.Migrations
             modelBuilder.Entity("AllupProjectT.Models.Category", b =>
                 {
                     b.HasOne("AllupProjectT.Models.Category", "Parent")
-                        .WithMany()
+                        .WithMany("Children")
                         .HasForeignKey("ParentId");
 
                     b.Navigation("Parent");
@@ -503,6 +512,11 @@ namespace AllupProjectT.Migrations
                     b.Navigation("Product");
 
                     b.Navigation("Tag");
+                });
+
+            modelBuilder.Entity("AllupProjectT.Models.Category", b =>
+                {
+                    b.Navigation("Children");
                 });
 #pragma warning restore 612, 618
         }
